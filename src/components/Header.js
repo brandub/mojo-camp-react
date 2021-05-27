@@ -30,7 +30,7 @@ export default class Header extends Component {
     render() {
         return (
             <React.Fragment>
-            <Navbar id="navBar" light sticky="top" expand="md">
+            <Navbar className="mb-2" id="navBar" light sticky="top" expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"><i  className="tree fa fa-tree fa-lg" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
