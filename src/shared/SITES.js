@@ -5,7 +5,7 @@ export const SITES = [
         image: "/assets/images/cabin-morel.jpg",
         type: "Cabin",
         price: "$74",
-        description: "Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers."
+        description: "on the shores of the pristine React Lake is a favorite for fly fishers."
     },
     {
         id: 1,
@@ -13,7 +13,7 @@ export const SITES = [
         image: "/assets/images/camp-wallowa.jpg",
         type: "Tent",
         price: "$34",
-        description: "Spend a few sunny days and starry nights beneath a canopy of Douglas Fir by the Wallowa River."
+        description: "Wonderful at night.  Fir njhjhlghgjkhjh'by the Wallowa River."
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export const SITES = [
         image: "/assets/images/alder-cabin.jpg",
         type: "Cabin",
         price: "$34",
-        description: "Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground."
+        description: "be your guide to this off-the-beaten, hike-in-only campground."
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ export const SITES = [
         image: "/assets/images/redcabin.jpg",
         type: "Cabin",
         price: "$84",
-        description: "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
+        description: "to leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ export const SITES = [
         image: "/assets/images/teepee-eagle.jpg",
         type: "Teepee",
         price: "$64",
-        description: "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
+        description: "You deep within the lush Redux Woods."
     },
     {
         id: 5,
@@ -53,7 +53,7 @@ export const SITES = [
         image: "/assets/images/guest-cabin.jpg",
         type: "Cabin",
         price: "$94",
-        description: "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
+        description: "Way way within the lush Redux Woods."
     },
     {
         id: 7,
@@ -61,6 +61,6 @@ export const SITES = [
         image: "/assets/images/camp-fir.jpg",
         type: "Tent",
         price: "$74",
-        description: "Deep within the lush Wallowa Woods."
+        description: "Deep with the lush Wallowa Woods."
     }
 ];
