@@ -13,7 +13,7 @@ export const SITES = [
         image: "/assets/images/camp-wallowa.jpg",
         type: "Tent",
         price: "$34",
-        description: "Wonderful at night.  Fir njhjhlghgjkhjh'by the Wallowa River."
+        description: "Wonderful at night.  Fir by the Wallowa River."
     },
     {
         id: 2,

@@ -60,7 +60,7 @@ const CarouselHead = (props) => {
   });
 
   return (
-    <Carousel
+    <Carousel className="mb-4"
       activeIndex={activeIndex}
       next={next}
       previous={previous}
