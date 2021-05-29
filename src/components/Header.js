@@ -1,40 +1,15 @@
-import React, { Component }  from 'react';
-import {Button, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, Modal, ModalHeader, ModalBody, NavItem, NavLink} from 'reactstrap';
+import React from 'react';
+import {Button, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink} from 'reactstrap';
 
 
-export default class Header extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            isNavOpen: false,
-            isModalOpen: false
-        };
-
-        this.toggleNav = this.toggleNav.bind(this);
-        this.toggleModal = this.toggleModal.bind(this);
-        
-    }
-    toggleModal() {
-        this.setState({
-            isModalOpen: !this.state.isModalOpen
-        });
-    }
-
-    toggleNav() {
-        this.setState({
-            isNavOpen: !this.state.isNavOpen
-        });
-    }
-    
-    render() {
+const Header = ({toggleNav, isNavOpen, openModal})=>  {
         return (
             <React.Fragment>
-            <Navbar id="navBar" light sticky="top" expand="md">
+            <Navbar id="navBar" light sticky="top" expand="sm">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"><i  className="tree fa fa-tree fa-lg" /></NavbarBrand>
-                        <NavbarToggler onClick={this.toggleNav} />
-                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                        <NavbarToggler onClick={() => toggleNav()} />
+                        <Collapse isOpen={!isNavOpen} navbar>
                             <Nav className="m-auto" navbar>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">
@@ -58,21 +33,17 @@ export default class Header extends Component {
                                 </NavItem>
                                 </Nav>
                             <span className="navbar-text ml-auto">
-                                <Button outline onClick={this.toggleModal}>
+                                <Button outline onClick={() => openModal()}>
                                     <i className="fa fa-bed" /> Booking
                                 </Button>
                             </span>
                         </Collapse>
                     </div>
                 </Navbar>
-                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                 <ModalHeader toggle={this.toggleModal}>Book a stay</ModalHeader>
-                 <ModalBody>
                  
-                 </ModalBody>
-             </Modal>
              </React.Fragment>
                 
         )
     }
-}
+    export default Header;
+

@@ -1,17 +1,15 @@
 import React from 'react'
-isModalOpen: false,
-this.toggleModal = this.toggleModal.bind(this);
 
-const toggleModal = () => {
-    this.setState({
-        isModalOpen: !this.state.isModalOpen
-    });
-}
-const BookingModal = () => {
+import {Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input} from 'reactstrap';
+
+
+
+
+const BookingModal = ({openModal, isModalOpen}) => {
     return (
         <div>
-            <Modal  isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                 <ModalHeader toggle={this.toggleModal}><img top width="100%" src='/assets/images/mountaincup.jpg' alt="mountain cup" /></ModalHeader>
+            <Modal  isOpen={isModalOpen} toggle={openModal}>
+                 <ModalHeader toggle={openModal}><img width="100%" src='/assets/images/mountaincup.jpg' alt="mountain cup" /></ModalHeader>
                  <ModalBody>
                  <Form>
                         <FormGroup>

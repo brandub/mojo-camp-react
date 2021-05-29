@@ -5,7 +5,7 @@ export const SITES = [
         image: "/assets/images/cabin-morel.jpg",
         type: "Cabin",
         price: "$74",
-        description: "on the shores of the pristine React Lake is a favorite for fly fishers."
+        description: "0 to leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 1,
@@ -13,7 +13,7 @@ export const SITES = [
         image: "/assets/images/camp-wallowa.jpg",
         type: "Tent",
         price: "$34",
-        description: "Wonderful at night. hello how are you Fir by the Wallowa River."
+        description: "1 to leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export const SITES = [
         image: "/assets/images/alder-cabin.jpg",
         type: "Cabin",
         price: "$34",
-        description: "be your guide to this off-the-beaten, hike-in-only campground."
+        description: "2 to leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ export const SITES = [
         image: "/assets/images/redcabin.jpg",
         type: "Cabin",
         price: "$84",
-        description: "to leave this hidden gem, deep within the lush Redux Woods."
+        description: "3 to leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ export const SITES = [
         image: "/assets/images/teepee-eagle.jpg",
         type: "Teepee",
         price: "$64",
-        description: "to leave this hidden gem, deep within the lush Redux Woods."
+        description: "4 to leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ export const SITES = [
         image: "/assets/images/teepee-pierre.jpg",
         type: "Teepee",
         price: "$54",
-        description: "nto leave this hidden gem, deep within the lush Redux Woods."
+        description: "5 to leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 6,
@@ -53,7 +53,7 @@ export const SITES = [
         image: "/assets/images/guest-cabin.jpg",
         type: "Cabin",
         price: "$94",
-        description: "to leave this hidden gem, deep within the lush Redux Woods."
+        description: "6 to leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 7,
@@ -61,6 +61,6 @@ export const SITES = [
         image: "/assets/images/camp-fir.jpg",
         type: "Tent",
         price: "$74",
-        description: "to leave this hidden gem, deep within the lush Redux Woods."
+        description: "7 to leave this hidden gem, deep within the lush Redux Woods."
     }
 ];
