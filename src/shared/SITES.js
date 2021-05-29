@@ -13,7 +13,7 @@ export const SITES = [
         image: "/assets/images/camp-wallowa.jpg",
         type: "Tent",
         price: "$34",
-        description: "Wonderful at night.  Fir by the Wallowa River."
+        description: "Wonderful at night. hello how are you Fir by the Wallowa River."
     },
     {
         id: 2,
@@ -37,7 +37,7 @@ export const SITES = [
         image: "/assets/images/teepee-eagle.jpg",
         type: "Teepee",
         price: "$64",
-        description: "You deep within the lush Redux Woods."
+        description: "to leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ export const SITES = [
         image: "/assets/images/teepee-pierre.jpg",
         type: "Teepee",
         price: "$54",
-        description: "never want to leave the Woods."
+        description: "nto leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 6,
@@ -53,7 +53,7 @@ export const SITES = [
         image: "/assets/images/guest-cabin.jpg",
         type: "Cabin",
         price: "$94",
-        description: "Way way within the lush Redux Woods."
+        description: "to leave this hidden gem, deep within the lush Redux Woods."
     },
     {
         id: 7,
@@ -61,6 +61,6 @@ export const SITES = [
         image: "/assets/images/camp-fir.jpg",
         type: "Tent",
         price: "$74",
-        description: "Deep with the lush Wallowa Woods."
+        description: "to leave this hidden gem, deep within the lush Redux Woods."
     }
 ];

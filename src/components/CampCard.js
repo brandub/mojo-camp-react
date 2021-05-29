@@ -13,7 +13,7 @@ const CampCard = ({cardItems}) => {
             <CardGroup>
                 {
                 cardItems.map((site) => {
-                    return  <div className="col-6 col-md-3"  key={site.id}>
+                    return  <div className="col col-sm-6 col-md-3"  key={site.id}>
                                 <Card >
                                     <CardImg top width="100%" src={site.image} alt={site.name} />
                                     <CardBody>

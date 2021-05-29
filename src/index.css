@@ -4,6 +4,11 @@
 .tree {
   color:lightseagreen;
 }
+#selector {
+  background-color: lightgrey;
+  color: #6c757d;
+}
 #selector:hover {
-  transform:translateY(-5px);
+  transform:translateY(-3px);
+  background-color: rgb(233, 229, 229);
 }
