@@ -1,5 +1,6 @@
 
 import './App.css';
+import 'react-dates/lib/css/_datepicker.css';
 import { useState } from 'react';
 import Header from './components/Header';
 // import { BrowserRouter } from 'react-router-dom';
@@ -15,7 +16,9 @@ import { SITES } from '../src/shared/SITES';
 function App() {
   const [cardItems, setCardItems] = useState(SITES);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isNavOpen, setNavOpen] = useState(true)
+  const [isNavOpen, setNavOpen] = useState(true);
+  const [siteSelected, setsiteSelected] = useState("")
+  const [sitePrice, setSitePrice] = useState("")
 
   const filter = (button) => {
     if(button === "All"){
@@ -25,9 +28,16 @@ function App() {
     const filteredData = SITES.filter(site => site.type === button);
     setCardItems(filteredData);
   }
-  const openModal = ()=>{
-    setIsModalOpen(!isModalOpen);
+  const openModal = (titleName, price)=>{
+    if (isModalOpen === false){
+      setIsModalOpen(!isModalOpen);
+      setsiteSelected(titleName);
+      setSitePrice(price);
+    }else{
+      setIsModalOpen(!isModalOpen)
 
+    }
+    
   }
   const toggleNav = ()=> {
   setNavOpen(!isNavOpen);
@@ -38,7 +48,7 @@ function App() {
     <CarouselHead />
     <ButtonRow  filter={filter}/>
     <CampCard openModal={openModal} isModalOpen={isModalOpen} cardItems={cardItems}/>
-    <BookingModal openModal={openModal} isModalOpen={isModalOpen}/>
+    <BookingModal openModal={openModal} isModalOpen={isModalOpen} siteSelected={siteSelected} sitePrice={sitePrice}/>
     </>
   );
 }

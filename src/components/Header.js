@@ -33,7 +33,7 @@ const Header = ({toggleNav, isNavOpen, openModal})=>  {
                                 </NavItem>
                                 </Nav>
                             <span className="navbar-text ml-auto">
-                                <Button outline onClick={() => openModal()}>
+                                <Button outline onClick={() => openModal("select one", "$0")}>
                                     <i className="fa fa-bed" /> Booking
                                 </Button>
                             </span>

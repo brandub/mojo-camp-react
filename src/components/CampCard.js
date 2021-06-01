@@ -20,7 +20,7 @@ const CampCard = ({openModal, cardItems}) => {
                                     <CardTitle className="text-nowrap"tag="h6">{site.name}</CardTitle>
                                     <CardSubtitle tag="h6" className="mb-2 text-muted">{site.price}</CardSubtitle>
                                     <CardText>{site.description}</CardText>
-                                    <Button onClick={() => openModal()}>Button</Button>
+                                    <Button onClick={() => openModal(site.name, site.price)}>Button</Button>
                                     </CardBody>
                                 </Card>
                             </div>
