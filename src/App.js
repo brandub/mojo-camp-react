@@ -9,6 +9,9 @@ import CarouselHead from './components/Carousel';
 import CampCard from './components/CampCard';
 import ButtonRow from './components/ButtonRow';
 import { SITES } from '../src/shared/SITES';
+import BlogPage from './components/BlogPage';
+import About from './components/About';
+import FooterComp from './components/FooterComp';
 
 
 
@@ -49,6 +52,9 @@ function App() {
     <ButtonRow  filter={filter}/>
     <CampCard openModal={openModal} isModalOpen={isModalOpen} cardItems={cardItems}/>
     <BookingModal openModal={openModal} isModalOpen={isModalOpen} siteSelected={siteSelected} sitePrice={sitePrice}/>
+    <BlogPage />
+    <About />
+    <FooterComp />
     </>
   );
 }

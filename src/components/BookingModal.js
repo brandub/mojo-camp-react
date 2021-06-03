@@ -1,5 +1,5 @@
 import React from 'react'
-import { DateRangePicker } from 'react-dates';
+
 
 import {Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input} from 'reactstrap';
 
@@ -10,8 +10,8 @@ const BookingModal = ({openModal, isModalOpen, siteSelected, sitePrice}) => {
     return (
         <div>
             
-            <Modal  isOpen={isModalOpen} toggle={() => openModal("" ,"" , false)}>
-                 <ModalHeader toggle={() => openModal("" ,"" , false)}><img width="100%" src='/assets/images/mountaincup.jpg' alt="mountain cup" /></ModalHeader>
+            <Modal  isOpen={isModalOpen} toggle={() => openModal("","", false)}>
+                 <ModalHeader toggle={() => openModal("","", false)}><img width="100%" src='/assets/images/mountaincup.jpg' alt="mountain cup" /></ModalHeader>
                  <ModalBody>
                  <Form>
                  <FormGroup className="m-2">
