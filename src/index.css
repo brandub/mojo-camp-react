@@ -12,3 +12,6 @@
   transform:translateY(-3px);
   background-color: rgb(233, 229, 229);
 }
+.site-footer {
+  background-color: lightgray;
+}

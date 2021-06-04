@@ -3,15 +3,16 @@ import './App.css';
 import 'react-dates/lib/css/_datepicker.css';
 import { useState } from 'react';
 import Header from './components/Header';
-// import { BrowserRouter } from 'react-router-dom';
 import BookingModal from './components/BookingModal';
-import CarouselHead from './components/Carousel';
-import CampCard from './components/CampCard';
-import ButtonRow from './components/ButtonRow';
+import CampPage from './components/CampPage'
+
 import { SITES } from '../src/shared/SITES';
 import BlogPage from './components/BlogPage';
 import About from './components/About';
 import FooterComp from './components/FooterComp';
+import HomePage from './components/MainComponent';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+
 
 
 
@@ -47,14 +48,18 @@ function App() {
 }
   return (
     <>
+    <BrowserRouter>
     <Header isNavOpen={isNavOpen} openModal={openModal} toggleNav={toggleNav}  />
-    <CarouselHead />
-    <ButtonRow  filter={filter}/>
-    <CampCard openModal={openModal} isModalOpen={isModalOpen} cardItems={cardItems}/>
     <BookingModal openModal={openModal} isModalOpen={isModalOpen} siteSelected={siteSelected} sitePrice={sitePrice}/>
-    <BlogPage />
-    <About />
+    <Switch>
+          <Route path='/home' render={() => <HomePage filter={filter} openModal={openModal} isModalOpen={isModalOpen} cardItems={cardItems} />}/>
+          <Route path='/camp' render={() => <CampPage filter={filter} openModal={openModal} isModalOpen={isModalOpen} cardItems={cardItems} />}/>
+          <Route path='/blog' component={BlogPage} />
+          <Route path='/about' component={About}/>
+           <Redirect to='/home' />
+    </Switch>
     <FooterComp />
+    </BrowserRouter>
     </>
   );
 }

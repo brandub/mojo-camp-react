@@ -1,5 +1,6 @@
 import React from 'react';
-import {Button, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink} from 'reactstrap';
+import {Button, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 
 const Header = ({toggleNav, isNavOpen, openModal})=>  {
@@ -12,24 +13,24 @@ const Header = ({toggleNav, isNavOpen, openModal})=>  {
                         <Collapse isOpen={!isNavOpen} navbar>
                             <Nav className="m-auto" navbar>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/home">
+                                    <NavLink className="nav-link" to="/camp">
                                         <i className="fa fa-free-code-camp" /> Camp
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/directory">
+                                    <NavLink className="nav-link" to="/blog">
                                         <i className="fa fa-bullhorn" /> Blog
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/aboutus">
+                                    <NavLink className="nav-link" to="/about">
                                         <i className="fa fa-binoculars " /> About
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/contactus">
-                                        <i className="fa fa-envelope " /> Contact Us
-                                    </NavLink>
+                                    <a className="nav-link" href="mailto:info@mojocamp.com">
+                                        <i className="fa fa-envelope " /> Contact
+                                    </a>
                                 </NavItem>
                                 </Nav>
                             <span className="navbar-text ml-auto">
