@@ -13,7 +13,7 @@ const CampCard = ({openModal, cardItems}) => {
             <CardGroup>
                 {
                 cardItems.map((site) => {
-                    return  <div className="col col-sm-6 col-md-3"  key={site.id}>
+                    return  <div className="col col-sm-6 col-md-3 my-2"  key={site.id}>
                                 <Card >
                                     <CardImg  width="100%" src={site.image} alt={site.name} />
                                     <CardBody>

@@ -13,7 +13,7 @@ const BlogCard = ({blogItems}) => {
             <CardGroup>
                 {
                 blogItems.map((blog) => {
-                    return  <div className="col col-md-4"  key={blog.id}>
+                    return  <div id="blogButton" className="col col-md-4 my-2"  key={blog.id}>
                                 <Card >
                                     <CardImg  width="100%" src={blog.image} alt={blog.headline} />
                                     <CardBody>

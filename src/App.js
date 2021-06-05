@@ -21,8 +21,8 @@ function App() {
   const [cardItems, setCardItems] = useState(SITES);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isNavOpen, setNavOpen] = useState(true);
-  const [siteSelected, setsiteSelected] = useState("")
-  const [sitePrice, setSitePrice] = useState("")
+  const [siteSelected, setsiteSelected] = useState("");
+  const [sitePrice, setSitePrice] = useState("49")
 
   const filter = (button) => {
     if(button === "All"){
@@ -50,7 +50,7 @@ function App() {
     <>
     <BrowserRouter>
     <Header isNavOpen={isNavOpen} openModal={openModal} toggleNav={toggleNav}  />
-    <BookingModal openModal={openModal} isModalOpen={isModalOpen} siteSelected={siteSelected} sitePrice={sitePrice}/>
+    <BookingModal cardItems={cardItems} openModal={openModal} isModalOpen={isModalOpen} siteSelected={siteSelected} sitePrice={sitePrice}/>
     <Switch>
           <Route path='/home' render={() => <HomePage filter={filter} openModal={openModal} isModalOpen={isModalOpen} cardItems={cardItems} />}/>
           <Route path='/camp' render={() => <CampPage filter={filter} openModal={openModal} isModalOpen={isModalOpen} cardItems={cardItems} />}/>

@@ -11,7 +11,7 @@ const BlogPage = () => {
         <div className="container my-5">
             <div className="row">
         <div className="col text-center">
-             <h4  className="text-center">Blog</h4>
+             <h3  className="text-center">Blog</h3>
            <p>This blog contains the latest Ranch news and happenings. <br />
           Please subscribe to follow along.<br /> </p>
           <input id="emailInput" type="email" placeholder="Enter email"/> 

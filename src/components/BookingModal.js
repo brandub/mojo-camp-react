@@ -6,12 +6,13 @@ import {Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input} fr
 import DateSelector from './DateSelector';
 
 
-const BookingModal = ({openModal, isModalOpen, siteSelected, sitePrice}) => {
+const BookingModal = ({openModal, isModalOpen, siteSelected, sitePrice,}) => {
+    
     return (
         <div>
             
-            <Modal  isOpen={isModalOpen} toggle={() => openModal("","", false)}>
-                 <ModalHeader toggle={() => openModal("","", false)}><img width="100%" src='/assets/images/mountaincup.jpg' alt="mountain cup" /></ModalHeader>
+            <Modal  isOpen={isModalOpen} toggle={() => openModal()}>
+                 <ModalHeader toggle={() => openModal()}><img width="100%" src='/assets/images/mountaincup.jpg' alt="mountain cup" /></ModalHeader>
                  <ModalBody>
                  <Form>
                  <FormGroup className="m-2">
@@ -32,7 +33,7 @@ const BookingModal = ({openModal, isModalOpen, siteSelected, sitePrice}) => {
                             <Input type="select" name="select" id="exampleSelect">
                             <option selected>{siteSelected}</option>
                             <option>Cabin Morel</option>
-                            <option> Camp Fir</option>
+                            <option>Camp Fir</option>
                             <option>Camp Wallowa</option>
                             <option>Alder Cabin</option>
                             <option>Teepee Eagle</option>
@@ -42,11 +43,11 @@ const BookingModal = ({openModal, isModalOpen, siteSelected, sitePrice}) => {
                             </Input>
                         </FormGroup>
                         
-                        
                         <FormGroup className="m-2">
                             <Label for="exampleText">Price</Label>
                             <div>{sitePrice} a night</div> 
                         </FormGroup>
+                
                         
                         <FormGroup className="m-2">
                             <Label for="exampleText">Comments/Questions</Label>
